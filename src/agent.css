@@ -1,0 +1,30 @@
+.agent-container {
+  display: flex;
+  margin-bottom: 8px;
+  width: 500px;
+  padding: 8px;
+  align-items: center;
+  border-radius: 4px;
+  color: #000;
+}
+
+.agent-container.selected {
+  border: 1px solid #000;
+}
+
+.agent-container:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
