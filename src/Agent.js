@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './agent.css'
 
-export function AgentCard({ name, age, phone, imageSrc, defaultSelected }) {
+export function AgentCard({ name, age, phone, imageSrc, defaultSelected, onChange }) {
   const [isSelected, setIsSelected] = useState(defaultSelected)
 
   const myStyle = {
@@ -11,6 +11,9 @@ export function AgentCard({ name, age, phone, imageSrc, defaultSelected }) {
 
   const handleClick = () => {
     setIsSelected(isSelected ? false : true)
+
+    // callback
+    onChange(isSelected ? false : true)
   }
 
   return (
